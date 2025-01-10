@@ -97,7 +97,7 @@
     background-color: #090e34;
     color: white;
     transform: translateX(100%);
-    transition: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     }
     .closeButton{
         background-color: white;
