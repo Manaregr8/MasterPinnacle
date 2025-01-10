@@ -1,0 +1,137 @@
+.headerContainer{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg,rgb(88, 183, 238),#96ffd7,rgb(255, 227, 142)) 1;
+    background-color: white;
+
+}
+.headlogo{
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    height: 100%;
+}
+.headlogo h1{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.headlogo img{
+    width: 60px;
+}
+.linksContainer{
+    display: flex;
+}
+.mainRoutes{
+    display: flex;
+}
+.headerContainer a{
+    padding: 10px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Raleway-Medium;
+}
+.headerContainer h1{
+    font-weight: 200;
+    font-family: Raleway-Medium;
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.active::after {
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+.linksForMenu{
+    display: none;
+}
+.menuHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+}
+@media(max-width:855px){
+    .linksForMenu p{
+        padding:15px 15px 0 15px;
+        color: rgb(230, 230, 230);
+    }
+    .menu{
+        display: flex;
+    }
+    .menuButton{
+        width: 40px;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuButton img{
+        width: 30px;
+        height: 100%;
+    }
+    .linksContainer{
+        display: none;
+    }
+    .linksForMenu{
+        display: flex;
+        flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #090e34;
+    color: white;
+    transform: translateX(100%);
+    transition: 0.5s all ease-in-out;
+    }
+    .closeButton{
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .closeButton img{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+    .linksForMenu a{
+        color: white;
+        padding: 10px;
+        border-left: 2px solid white;
+        margin: 10px 15px 10px 15px;
+    }
+    .linksForMenu a::after{
+        background-color: white;
+    }
+}
+@media(max-width:425px){
+    .linksForMenu{
+    width: 100%;
+    }
+    .headerContainer h1{
+        font-size: 18px;
+    }
+    .headerContainer{
+        padding: 10px 20px;
+    }
+
+}
